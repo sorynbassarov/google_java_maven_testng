@@ -30,7 +30,7 @@ public class GoogleSearchTest extends BaseTest {
         GooogleHomePage.enterSearchTerm(TestData.INCORRECT_SEARCH_TERM);
         GooogleHomePage.pressEnterButton();
 
-        Assert.assertFalse(GoooglehomePage.areSearchResultsDisplayed(), "Результаты поиска не отображаются");
+        Assert.assertFalse(GooogleHomePage.areSearchResultsDisplayed(), "Результаты поиска не отображаются");
     }
 
     @Test(description = "Проверка автодополнения при вводе поискового запроса")
